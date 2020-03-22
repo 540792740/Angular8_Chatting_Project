@@ -1,0 +1,13 @@
+@mixin mx1 {
+  html, body, ul, ol {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@mixin mx {
+  border: 1px solid blue;
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+}

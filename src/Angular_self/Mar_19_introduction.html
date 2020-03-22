@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="JS/bootstrap.min.css">
+    <script src="JS/jquery-3.2.1.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/angular.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myctl" ng-init="val1=1; val2= 2">
+<div class="container">
+    <h1 class="page-header">Angular Study</h1>
+    <form action="">
+        <h4>Example 1: User Interface</h4>
+        <div class="form-group">
+            <label>Username : </label>
+            <input type="text" class="form-control" ng-model="user">
+        </div>
+        <div class="well">Username: <span ng-bind='user'></span></div>
+
+        <div class="form-group">
+            <label>Password : </label>
+            <input type="text" class="form-control" ng-model="pass">
+        </div>
+        <div class="well">Password : <span ng-bind='pass'></span></div>
+
+        <h4>Example 2: Same output</h4>
+        <div class="form-group">
+            <label>First Value: </label>
+            <input type="text" class="form-control" ng-model="val1">
+        </div>
+
+        <div class="form-group">
+            <label>Second Value: </label>
+            <input type="text" class="form-control" ng-model="val2">
+        </div>
+
+        <div class="form-group">
+            <div class="well">{{get_output()}}</div>
+        </div>
+    </form>
+</div>
+</body>
+<script>
+    app = angular.module('myApp', []);
+    app.controller('myctl', function ($scope) {
+        $scope.users = ['user1', 'user2', 'user3'];   // Could use as {{users[0]}}
+        $scope.json = {'name': 'user1'};            // Could use as json.name
+
+        $scope.get_output = function () {
+            str = parseInt($scope.val1) + parseInt($scope.val2);
+            return str;
+        };
+    });
+</script>
+
+</html>

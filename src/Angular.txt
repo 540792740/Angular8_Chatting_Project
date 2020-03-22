@@ -1,0 +1,14 @@
+Angular
+
+MVC:
+
+1. Array
+    $scope.users = {'user1', 'user2'}
+
+2.  <h2 *ngIf= "display; else hidden">          -> if else in Angular8
+    <div *ngFor="let fruit of fruits;"></div>   -> For loop
+
+
+3.
+
+4.

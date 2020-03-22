@@ -1,0 +1,78 @@
+.common, .red, .blue {
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold; }
+
+.red {
+  background-color: red; }
+
+.blue {
+  background-color: blue; }
+
+.div1 {
+  height: 128px;
+  width: 96px;
+  background-image: url("img/1.JPG"); }
+
+.div2 {
+  color: red; }
+
+* {
+  font-family: Verdana, Geneva; }
+
+.p1 {
+  padding-left: 10px; }
+
+.p2 {
+  padding-left: 20px; }
+
+.p3 {
+  padding-left: 30px; }
+
+.p4 {
+  padding-left: 40px; }
+
+.p5 {
+  padding-left: 50px; }
+
+.p6 {
+  padding-left: 60px; }
+
+.p1 {
+  color: red; }
+
+.p2 {
+  color: blue; }
+
+.p3 {
+  color: pink; }
+
+.p4 {
+  color: yellow; }
+
+.p5 {
+  color: red; }
+
+.p6 {
+  color: blue; }
+
+.p1 {
+  background-color: yellow;
+  border: solid; }
+
+.p2 {
+  background-color: red;
+  border: dotted; }
+
+.p3 {
+  background-color: blue;
+  border: double; }
+
+.p4 {
+  background-color: green;
+  border: solid; }
+
+/*# sourceMappingURL=Mar_18_var.css.map */
